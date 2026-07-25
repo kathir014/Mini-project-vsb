@@ -1,0 +1,44 @@
+<input id="op" >
+<input id="wy" ">
+<button onclick="add()">add</button>
+<h1>result: </h1>
+<h2 id="result"></h2>
+<style>
+    button{
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 30px;
+        color: darkblue;
+    }
+    h2  {
+        display: inline;
+        width: 20px;
+        color: darkkhaki;
+
+    }
+    h1{
+        width: 20;
+        font-size: 35px;
+        display: inline;
+        color: gold;
+    }
+</style>
+
+<script>
+    var box1=document.getElementById("op")
+    var box2=document.getElementById("wy")    
+    var box3=document.getElementById("result")
+
+
+    function add()
+
+    {
+        var box1value=Number(box1.value)
+    var box2value=Number(box2.value)
+    var total=box1value+box2value
+
+        result.textContent=total
+    }   
+</Script>
+
